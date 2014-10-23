@@ -5,7 +5,7 @@ Adds a menu endpoint for the [WordPress REST API](https://wordpress.org/plugins/
 ### Installation
 This is not a plugin.
 
-Add `"shelob9/shelob9/jp-api-menu": "dev-master"` to your site/plugin/theme's composer.json file. Include composer autoloader.
+Add `"jp-menu-route": "dev-master"` to your site/plugin/theme's composer.json file. Include composer autoloader.
 
 ### Use
 Make request to `wp-json/jp-api/menus/` to get info about all menus.
