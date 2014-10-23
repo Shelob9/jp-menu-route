@@ -18,6 +18,23 @@ if ( ! defined( 'JP_API_ROUTE' ) ) {
 
 class JP_API_Menu {
 	/**
+	 * Server object
+	 *
+	 * @var WP_JSON_ResponseHandler
+	 */
+	protected $server;
+
+	/**
+	 * Constructor
+	 *
+	 * @param WP_JSON_ResponseHandler $server Server object
+	 */
+	public function __construct(WP_JSON_ResponseHandler $server) {
+		$this->server = $server;
+
+	}
+
+	/**
 	 * Register endpoints for JSON REST API.
 	 *
 	 * @param array $routes
